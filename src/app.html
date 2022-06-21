@@ -1,0 +1,44 @@
+<template>
+	<lightning-card>
+		<div style="position:absolute;top:0.5rem;left:7rem">
+			<p class="slds-p-horizontal_xx-large" style="left:50rem">
+				<lightning-formatted-text style="height:50rem" value="Sign Up for your salesforce Developer Account">
+				</lightning-formatted-text><br>
+
+			</p>
+		</div><br>
+		<div class="slds-p-left_medium">
+			<lightning-input type="text" label="First Name" placeholder="Your First Name" required></lightning-input>
+		</div><br>
+		<div class="slds-p-left_medium">
+
+			<lightning-input type="text" label="Last Name" placeholder="Your Last Name" required> </lightning-input>
+		</div><br>
+		<div class="slds-p-left_medium">
+
+			<lightning-input type="email" label="Email" placeholder="Your Email address" required> </lightning-input>
+		</div><br>
+		<div class="slds-p-left_medium">
+
+			<lightning-combobox name="role" label="Role" value={values} placeholder="Select Role" options={options}
+				onchange={handleChange} required></lightning-combobox>
+		</div><br>
+		<div class="slds-p-left_medium">
+
+			<lightning-input type="text" label="Company" placeholder="Your Company Name" required> </lightning-input>
+		</div><br>
+		<div class="slds-p-left_medium">
+
+			<lightning-input type="text" label="Country/Region" placeholder="Select Country/Region" required>
+			</lightning-input>
+		</div><br>
+		<div class="slds-p-left_medium">
+
+			<lightning-input type="number" label="Postal Code" placeholder="Your Postal Code" required> </lightning-input>
+		</div><br>
+		<div class="slds-p-around_medium">
+			<lightning-button variant="brand" label="Sign Up"></lightning-button>
+		</div>
+
+	</lightning-card>
+</template>
